@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenerised app</title>
+</head>
+<body>
+    <table>
+           <tr>
+               <td>
+                      <label for="name">Name :</label>
+               </td>
+               <td>
+                    <input type="text" id="name">
+               </td>
+           </tr>
+           <tr>
+            <td>
+                   <label for="password">Password :</label>
+            </td>
+            <td>
+                 <input type="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                   <label for="Date">DOB :</label>
+            </td>
+            <td>
+                 <input type="date" id="date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                   <label for="email">email :</label>
+            </td>
+            <td>
+                 <input type="text" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                   <label for="city">City :</label>
+            </td>
+            <td>
+                 <input type="text" id="city">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                   <label for="state">State :</label>
+            </td>
+            <td>
+                 <input type="text" id="state">
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: start;">
+                   <label for="state">Hobbies :</label>
+            </td>
+            <td>
+                 <input type="checkbox" id="state">playing Cricket <br>
+                 <input type="checkbox" id="state">playing TT <br>
+                 <input type="checkbox" id="state">Watching movies <br>
+                 <input type="checkbox" id="state">listening songs <br>
+                     
+            </td>
+        </tr>
+
+        <tr >
+            <td colspan="2" style="align-items: center;">
+                <button onclick="getdata()"> submit</button>
+            </td>
+        </tr>
+
+
+    </table>
+        
+       <div id="dataname">
+             
+       </div>
+
+    <script>
+              function getdata(){
+                   var name = document.getElementById("name");
+                   var container= document.getElementById("dataname");
+                   var data=name.innerText;
+                   container.innerText= name.innerText;
+              }
+    </script>
+</body>
+
+</html>
